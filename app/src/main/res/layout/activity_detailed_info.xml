@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.needle.soniaditi380.books.Activity.DetailedInfo">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="2dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/info_text"
+            style="@style/CardViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="64dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bookname"
+                    android:transitionName="Book_Name_shared"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textSize="16sp"
+                    android:text="@string/app_name"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"/>
+
+
+                <TextView
+                    android:id="@+id/authname"
+                    android:transitionName="Author_name_shared"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="12sp"
+                    android:text="@string/app_name"
+                    android:textStyle="italic"
+                    android:fontFamily="cursive"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="32dp"
+                    android:orientation="horizontal">
+
+
+                    <android.support.v7.widget.AppCompatRatingBar
+
+                        android:id="@+id/ratingbar"
+
+                        style="?android:attr/ratingBarStyleSmall"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="left|center_vertical"
+
+                        android:isIndicator="true"
+
+                        android:numStars="5"
+
+                        android:stepSize="0.1" />
+
+                    <TextView
+                        android:id="@+id/rating_text"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="16dp"
+
+                        android:textSize="10sp"
+
+                        android:gravity="center"
+
+                        android:textStyle="bold"
+
+                        android:paddingLeft="8dp"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pagecount"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="16dp"
+
+
+                        android:textSize="10sp"
+
+                        android:textColor="#42b96b"
+
+                        android:text="320 Pages"
+
+                       android:fontFamily="condensed"
+
+                        android:textStyle="bold"
+
+                        />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="2dp"
+                        android:background="@android:color/holo_green_dark"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_gravity="center"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/price"
+
+                        android:fontFamily="condensed"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="16dp"
+
+                        android:textStyle="bold"
+
+                        android:textColor="#42b96b"
+
+                        android:textSize="10sp"
+
+                        android:text="890.00 INR"
+                        />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="160dp"
+                android:layout_marginBottom="28dp"
+                android:orientation="vertical">
+
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/info_cover"
+            style="@style/CardViewStyle"
+            android:transitionName="MyImage"
+            android:layout_width="130dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            card_view:cardElevation="15dp">
+
+            <ImageView
+                android:id="@+id/info_coverimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <ru.dimorinny.floatingtextbutton.FloatingTextButton
+            android:id="@+id/action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="15dp"
+            android:layout_gravity="center|bottom"
+            app:floating_background_color="#42b96b"
+            app:floating_right_icon="@drawable/ic_library_books_black_24dp"
+            app:floating_title="@string/action_button_title"
+            app:floating_title_color="@android:color/white" />
+
+
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>

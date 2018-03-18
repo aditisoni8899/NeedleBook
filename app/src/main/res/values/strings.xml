@@ -1,0 +1,30 @@
+<resources>
+    <!-- App Name-->
+    <string name="app_name">NeedleBook</string>
+    <!-- text for the tool bar of MainAcitivty-->
+    <string name="tool_title_forDiscover">DISCOVER</string>
+    <!--search icon in Main activity text-->
+    <string name="search_title">Search</string>
+    <!--SearchActivity title text-->
+    <string name="searchActivity_title">Search Results</string>
+    <!--SearchActivity title text-->
+    <string name="DetailedInfo_title">About Book</string>
+    <!--MyBooksActivity title text-->
+    <string name="MyBooks">My  Books</string>
+
+    <!-- Text to display in the list when there are no books [CHAR LIMIT=NONE] -->
+
+    <string name="no_books">No Book found.</string>
+
+    <!-- Error message when there is no internet connectivity [CHAR LIMIT=NONE] -->
+
+    <string name="no_internet_connection">No internet connection.</string>
+
+    <!-- for navigation drawer-->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- for  detailinfo Activity add to book shelf button-->
+    <string name="action_button_title">Add to Bookshelves</string>
+
+</resources>

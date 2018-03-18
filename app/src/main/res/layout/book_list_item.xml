@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="horizontal"
+
+    android:padding="16dp">
+
+
+    <ImageView
+
+        android:id="@+id/coverimage"
+
+        android:layout_gravity="center_vertical"
+
+        android:transitionName="MyImage"
+
+        android:layout_width="@dimen/list_item_height"
+
+        android:layout_height="@dimen/list_item_height" />
+
+
+    <LinearLayout
+
+        android:layout_width="0dp"
+
+        android:layout_height="@dimen/list_item_height"
+
+        android:layout_gravity="center_vertical"
+
+        android:layout_marginLeft="16dp"
+
+        android:layout_marginStart="16dp"
+
+        android:layout_weight="1"
+
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/book_title"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+
+            android:transitionName="Book_Name_shared"
+
+            android:layout_weight="1"
+
+            android:ellipsize="end"
+
+            android:maxLines="1"
+
+            android:textColor="@color/textColorTitle"
+
+            android:textSize="16sp"
+
+            tools:text="Long placeholder location that should wrap to more than 2 lines of text" />
+
+
+
+        <TextView
+
+            android:id="@+id/Author"
+
+            android:transitionName="Author_name_shared"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+
+            android:layout_weight="1"
+
+            android:ellipsize="end"
+
+            android:fontFamily="sans-serif-medium"
+
+            android:maxLines="1"
+
+            android:textAllCaps="false"
+
+            android:textColor="@color/textColorAuthor"
+
+            android:textSize="12sp"
+
+
+
+            tools:text="30km S of" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.AppCompatRatingBar
+
+                android:id="@+id/ratingbar"
+
+                style="?android:attr/ratingBarStyleSmall"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="left|center_vertical"
+
+                android:isIndicator="true"
+
+                android:numStars="5"
+
+                android:stepSize="0.1" />
+
+            <TextView
+                android:id="@+id/rating_text"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="16dp"
+
+                android:layout_gravity="left|center_vertical"
+
+                android:paddingLeft="16dp" />
+
+
+            <ImageView
+                android:layout_width="14dp"
+
+                android:layout_height="14dp"
+
+                android:layout_gravity="bottom"
+
+                android:layout_marginLeft="6dp"
+
+                android:layout_marginRight="6dp"
+
+                android:background="@drawable/ic_people_black_24dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
